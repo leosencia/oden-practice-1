@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="practice-style.css">
+<body>
+    <div class="imageContainer">
+        <img id="banner-img" src="banner.avif" alt="banner image">
+        <div class="logoBanner">
+            <img src="odin-lined.png" alt="Odin" class="logoImg">
+            <span class="logoLabel">ODIN</span>
+        </div>
+        <span class="imageCredit">Photo by <a class="creditLink" href="https://unsplash.com/@haliewestphoto">Haley West</a> on <a class="creditLink" href="https://unsplash.com/">Unsplash</a></span>
+    </div>
+    <div class="formContainer">
+        <div class="headers">
+            <p class="headerText">
+                This is not a real online service! You know you need something like this in your life 
+                to help you realize your deepest dreams. Sign up <em>now</em> to get started started.
+            </p>
+            <p class="headerText">
+                You know you want to.
+            </p>
+        </div>
+        <form action="#" class="signUpForm" method="get">
+            <p class="formHeader">
+                Let's do this!
+            </p>
+            <div class="formGrid">
+                <div class="form-group">
+                    <label for="fName">FIRST NAME</label>
+                    <input type="text" id="fName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lName">LAST NAME</label><input type="text" id="lName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="number">PHONE NUMBER</label><input type="tel" id="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="091-234-5678" required>         
+                </div>
+                <div class="form-group">
+                    <label for="password">PASSWORD</label><input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">CONFIRM PASSWORD</label><input type="password" id="confirmPassword" required>
+                </div>
+            </div>
+        </form>
+        <button class="button" id="signUpBtn" type="submit">Create Account</button>
+        <span class="bodyText">
+            Already have an account?
+            <a href="" id="logInText">Log in</a>
+        </span>
+    </div>
+</body>
+</html>
